@@ -28,11 +28,13 @@ export default function Content() {
           <button
             className="btn btn-add"
             onClick={() => {
-              setTodos((prev) => [
-                ...prev,
-                { todo: value, date: new Date(), complete: false },
-              ]);
-              setValue("");
+              if (value) {
+                setTodos((prev) => [
+                  ...prev,
+                  { todo: value, date: new Date(), complete: false },
+                ]);
+                setValue("");
+              }
             }}
           >
             Add
