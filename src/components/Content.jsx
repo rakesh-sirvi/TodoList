@@ -82,7 +82,14 @@ export default function Content() {
               </>
             ) : (
               <>
-                <div className="text">{todo.todo}</div>
+                <div
+                  className="text"
+                  style={{
+                    textDecorationLine: todo.complete && "line-through",
+                  }}
+                >
+                  {todo.todo}
+                </div>
                 <button
                   className="btn"
                   onClick={() => setEdit({ value: true, id: idx })}
