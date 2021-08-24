@@ -1,0 +1,82 @@
+html {
+    font-size: 25px;
+}
+
+.content {
+    margin: 3em auto;
+    width: 90%;
+    max-width: 700px;
+}
+
+.add-todo {
+    width: 100%;
+}
+
+.add-todo>div {
+    display: flex;
+}
+
+.add-todo input {
+    flex: 1;
+    height: 20px;
+}
+
+.todos {
+    margin-top: 2em;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.todos::-webkit-scrollbar {
+    display: none;
+}
+
+.todo {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.btn {
+    background-color: unset;
+    border: none;
+    font-size: 0.8rem;
+}
+
+.btn:hover {
+    background-color: aliceblue;
+}
+
+.btn-del {
+    color: red;
+    margin-left: 5px;
+}
+
+.btn-add {
+    background-color: #5dff5dd4;
+}
+
+.text {
+    flex: 1;
+    padding: 5px;
+    margin: 0 5px;
+    text-align: justify;
+    border: 1px solid gray;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.more {
+    background-color: unset;
+    color: red;
+}
+
+.more:hover {
+    cursor: pointer;
+}
+
+.edit-todo {
+    flex: 1;
+    height: 1rem;
+    font-size: 0.7rem;
+    margin: 5px;
+}
